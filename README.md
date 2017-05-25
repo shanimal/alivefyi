@@ -5,14 +5,16 @@ A live FYI is a living information network.
 ```
 npm i alivefyi --save
 ```
-
-<ul>users
-  <li><em>ask</em> ask alivefyi for relevant information (publish to the request channel)
-  <li><em>listen</em> add listener to the response channel
+# users
+<ul>Users request information from the network and listen for responses from providers
+  <li><em>ask:</em> ask alivefyi for relevant information (publishes questions to the request channel)
+  <li><em>listen:</em> add listener to the response channel (listens to the response channel)
 </ul>
-<ul>provider
-  <li><em>subscribe</em> add listener to request channel
-  <li><em>publish</em> give relevant information (publish to the response channel)
+
+# providers
+<ul>Providers subscribe to the network and filter requests for relevant information. They might use satori queries to limit the information they receive.
+  <li><em>subscribe:</em> add listener to request channel (listens to the request channel)
+  <li><em>publish:</em> provide relevant information into the response channel (publish to the response channel)
 </ul>
 
 ## Create a request:
