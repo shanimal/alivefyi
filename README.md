@@ -50,6 +50,12 @@ function publishAddress() {
   }
 }
 
+function getGoogleUrl(location) {
+  const info = `${location.address.streetAddress},+${location.address.addressLocality},+${location.address.addressRegion}+${location.address.postalCode}/@${location.geo.latitude},${location.geo.longitude}`;
+  const result = info.replace('+', '%2B').replace(/\s/gm, '+');
+  return `https://www.google.com/maps/place/${result}`;
+}
+
 const ADDRESS = {
   "@type": "Place",
   _pid: 'Test',
