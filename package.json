@@ -1,0 +1,22 @@
+{
+  "name": "alivefyi",
+  "version": "1.0.0",
+  "description": "A live FYI is a living information network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanimal/alivefyi.git"
+  },
+  "author": "shanimal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shanimal/alivefyi/issues"
+  },
+  "homepage": "https://github.com/shanimal/alivefyi#readme",
+  "dependencies": {
+    "satori-sdk-js": "^1.0.1"
+  }
+}

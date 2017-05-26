@@ -1,6 +1,10 @@
 # alivefyi
 
-A live FYI is a living information network. 
+A live FYI is a living information network.
+ 
+ If you are building an app that wants to provide local information to your users you are a ***user***.
+ 
+ If you have information that is relevant to fun things to do, eat, etc, you are a ***provider***. 
 
 ```
 npm i alivefyi --save
@@ -30,18 +34,32 @@ alivefyi.ask({
   }
 });
 alivefyi.listen(data => update(data));
+
+/**
+* updates the console
+* @param one of many data responses from one or more providers
+*/
+function update(data) {
+  console.log('New data', data);
+}
+
 ```
 ## Create a feed:
 ```JavaScript
 const alivefyi = require('alivefyi');
 
+/**
+* listen for user inputs
+*/
 alivefyi.subscribe((data) => {
-  console.log(data);
   if(data.terms.indexOf('Machine Zone')) {
     publishAddress();
   }
 });
 
+/**
+* publish to data to user
+*/
 function publishAddress() {
   alivefyi.publish({
     const result = ADDRESS;
