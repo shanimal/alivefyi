@@ -1,6 +1,6 @@
 {
   "name": "alivefyi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A live FYI is a living information network.",
   "main": "index.js",
   "scripts": {
