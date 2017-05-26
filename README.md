@@ -61,11 +61,7 @@ alivefyi.subscribe((data) => {
 * publish to data to user
 */
 function publishAddress() {
-  alivefyi.publish({
-    const result = ADDRESS;
-    result.url = getGoogleUrl(result);
-    return result;
-  }
+  alivefyi.publish(result);
 }
 
 function getGoogleUrl(location) {
@@ -96,4 +92,5 @@ const ADDRESS = {
     coupons: [],
   }
 }
+ADDRESS.url = getGoogleUrl(ADDRESS);
 ```
